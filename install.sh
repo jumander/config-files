@@ -2,4 +2,8 @@
 
 CURRENT_DIR=`pwd`
 
-ln -s -i $CURRENT_DIR/nvim $HOME/.config/
+echo "Install nvim config? (y/n)"
+read answer
+if [ "$answer" = "y" ] || [ "$answer" = "Y" ]; then
+	ln -sf $CURRENT_DIR/nvim ~/.config/
+fi
