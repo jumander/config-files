@@ -1,0 +1,12 @@
+set path+=**
+set relativenumber
+
+if !exists('g:vscode')
+	nnoremap <C-u> <C-u>zz
+	nnoremap <C-d> <C-d>zz
+endif
+
+" nnoremap h <nop>
+" nnoremap l <nop>
+" nnoremap h <nop>
+" nnoremap l <nop>
