@@ -244,15 +244,15 @@
       "when": "!isInDiffEditor"
     },
     {
-      "key": "ctrl+w c",
-      "command": "gitlens.revealCommitInView"
-    },
-    {
       "key": "ctrl+w b",
       "command": "gitlens.showBranchesView"
     },
     {
       "key": "ctrl+w f",
       "command": "workbench.action.findInFiles"
+    },
+    {
+      "key": "ctrl+w c",
+      "command": "gitlens.showCommitsView"
     }
 ]
