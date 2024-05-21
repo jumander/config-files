@@ -26,10 +26,6 @@
         "command": "-workbench.action.focusThirdEditorGroup"
     },
     {
-        "key": "ctrl+3",
-        "command": "workbench.action.tasks.terminate"
-    },
-    {
       "key": "ctrl+shift+alt+i",
       "command": "editor.action.inspectTMScopes"
     },
@@ -81,12 +77,12 @@
       "when": "editorTextFocus && !suggestWidgetMultipleSuggestions && !textCompareEditorActive"
     },
     {
-      "key": "ctrl+n",
+      "key": "ctrl+g ctrl+n",
       "command": "workbench.action.compareEditor.nextChange",
       "when": "textCompareEditorVisible && !suggestWidgetMultipleSuggestions"
     },
     {
-      "key": "ctrl+shift+n",
+      "key": "ctrl+g ctrl+p",
       "command": "workbench.action.compareEditor.previousChange",
       "when": "textCompareEditorVisible"
     },
@@ -173,11 +169,6 @@
       "command": "workbench.action.nextEditor"
     },
     {
-      "key": "ctrl+f",
-      "command": "-vscode-neovim.ctrl-f",
-      "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
-    },
-    {
       "key": "ctrl+u",
       "command": "-vscode-neovim.ctrl-u",
       "when": "editorTextFocus && neovim.ctrlKeysNormal.u && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
@@ -254,5 +245,38 @@
     {
       "key": "ctrl+w c",
       "command": "gitlens.showCommitsView"
-    }
+    },
+    {
+      "key": "ctrl+f",
+      "command": "-vscode-neovim.ctrl-f",
+      "when": "editorTextFocus && neovim.ctrlKeysNormal.f && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+    },
+    {
+      "key": "ctrl+3",
+      "command": "workbench.action.tasks.restartTask"
+    },
+    {
+      "key": "ctrl+q",
+      "command": "-workbench.action.quit"
+    },
+    {
+      "key": "alt+right",
+      "command": "workbench.action.navigateForward",
+      "when": "canNavigateForward"
+    },
+    {
+      "key": "ctrl+shift+-",
+      "command": "-workbench.action.navigateForward",
+      "when": "canNavigateForward"
+    },
+    {
+      "key": "alt+left",
+      "command": "workbench.action.navigateBack",
+      "when": "canNavigateBack"
+    },
+    {
+      "key": "ctrl+alt+-",
+      "command": "-workbench.action.navigateBack",
+      "when": "canNavigateBack"
+    },
 ]
