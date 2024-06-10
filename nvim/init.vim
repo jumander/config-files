@@ -1,5 +1,6 @@
 set path+=**
 set relativenumber
+set clipboard+=unnamedplus
 
 if !exists('g:vscode')
 	nnoremap <C-u> <C-u>zz
