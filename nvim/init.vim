@@ -5,6 +5,8 @@ set clipboard+=unnamedplus
 if !exists('g:vscode')
 	nnoremap <C-u> <C-u>zz
 	nnoremap <C-d> <C-d>zz
+	nnoremap <C-h> :tabprevious<CR>
+	nnoremap <C-l> :tabnext<CR>
 endif
 
 " nnoremap h <nop>
