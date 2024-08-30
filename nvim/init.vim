@@ -15,3 +15,5 @@ endif
 " nnoremap l <nop>
 
 inoremap <C-c> <NOP>
+vnoremap <C-c> <NOP>
+cnoremap <C-c> <NOP>
