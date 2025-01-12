@@ -279,4 +279,9 @@
       "command": "-workbench.action.navigateBack",
       "when": "canNavigateBack"
     },
+    {
+      "key": "ctrl+c",
+      "command": "-vscode-neovim.escape",
+      "when": "editorTextFocus && neovim.ctrlKeysInsert.c && neovim.init && neovim.mode != 'normal' && editorLangId not in 'neovim.editorLangIdExclusions'"
+    },
 ]
